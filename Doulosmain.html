@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+
+		<title>
+
+			DOULOS III: Northlands
+
+		</title>
+
+		<script src="https://simplycodingcourses.com/files/simplyjs/simply.js">
+
+		</script>
+
+		<script>
+
+			function start(){
+
+				//background
+
+				sjs.open("target",1520,738);
+
+				var background = new sjs.Image("DoulosLogo.png");
+
+				background.setSize(1520,sjs.getHeight());
+
+				//play
+
+				var signIn = new sjs.Button("Download",function(){
+
+					window.location = "Download.html";
+
+
+				});
+				signIn.offset(725,100);
+
+
+				creat.center();
+				creat.offset(100,100);
+
+				
+
+			}
+
+		</script>
+
+	</head>
+
+	<body onload="start()">
+
+		<div id="target" style="overflow:hidden; background-color:; margin:auto;">
+
+		</div>
+
+	</body>
+
+</html>
